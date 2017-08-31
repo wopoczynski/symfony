@@ -1,0 +1,18 @@
+
+{% extends 'base.html.twig' %}
+{% block body%}
+<h1>Your lucky number is {{ number }}</h1>
+<h2>
+    {{'For loop results'}} <br />
+    {% for i in 1..10 %}
+        <ul>
+            <li>
+                wartosc: 
+                {{i}}
+            </li>
+
+        </ul>
+        {% endfor %}
+</h>
+{% endblock %}
+{% block title%} {{'Lucky number' |upper}} {%endblock%}
